@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scholar Literature Maps"
+  short_description: "English-first literature maps, paper lineages, and scholar discovery."
+  default_prompt: "Use $scholar-literature-maps to turn my research topic into an English-first grouped literature map with relevance explanations."
