@@ -8,17 +8,41 @@ Academic literature searches often fail in two ways: non-English prompts can pul
 
 - Converts Chinese or other non-English research questions into field-standard English academic search concepts.
 - Builds grouped literature maps for a topic, with short explanations of why each paper is relevant.
-- Searches narrowly first, then performs controlled adjacent-core expansion so important nearby papers are not missed.
 - Traces related papers around a seed paper, including earlier foundations, same-author work, later citing papers, and close neighboring studies.
 - Identifies high-impact and recently active scholars in a research area, with representative papers and relevance notes.
-- Classifies candidate papers as core, adjacent-core, boundary, or excluded to avoid padding narrow topics with weakly related papers.
+
+
+## Quick Install
+
+This skill can be installed directly from GitHub with Codex's skill installer. The current repository is:
+
+```text
+https://github.com/Zhgb/scholar-literature-maps
+```
+
+Because this repository root is the skill folder itself, ask Codex:
+
+```text
+Use $skill-installer to install the Codex skill from https://github.com/Zhgb/scholar-literature-maps. The repository root is the skill folder; install path "." with name "scholar-literature-maps".
+```
+
+Or run the installer script manually:
+
+```bash
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo Zhgb/scholar-literature-maps \
+  --path . \
+  --name scholar-literature-maps
+```
+
+After installation, restart Codex so it can pick up the new skill.
 
 ## Typical Uses
 
 - Find the most relevant English papers for a research topic.
 - Understand how one important paper fits into a broader literature.
 - Discover authoritative and currently active researchers in a field.
-- Improve noisy Scholar Labs or academic-search results through explicit scope locking and reranking.
+
 
 ## Main Files
 
